@@ -1,0 +1,14 @@
+﻿{
+  "Id": "cMM2jrLeI0Omcs3W1vrBog",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/cMM2jrLeI0Omcs3W1vrBog",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/Ls9UF7lQ6ECfEv2kfbZ-RA",
+  "Name": "Click 'More'",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2023-01-03T05:42:19.6530254Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-03T05:42:19.6530254Z"
+}

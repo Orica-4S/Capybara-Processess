@@ -1,0 +1,331 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Load_List_of_Credit_Limit_Utilization" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ucas="clr-namespace:UiPath.Core.Activities.SAP;assembly=UiPath.UiAutomation.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_BusinessPartner" Type="InArgument(x:String)" />
+    <x:Property Name="in_CreditSegment" Type="InArgument(x:String)" />
+    <x:Property Name="in_TCodeCreditLimitList" Type="InArgument(x:String)" />
+    <x:Property Name="in_RetryinProcess" Type="InArgument(x:Int32)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1144,3860</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Load_List_of_Credit_Limit_Utilization_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="35">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="45">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Load_List_of_Credit_Limit_Utilization" sap:VirtualizedContainerService.HintSize="1154,3795" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="booCreditLimitPageExists" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Try Catch for Loading List of Credit Limit Utilization" sap:VirtualizedContainerService.HintSize="1092,3673" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Try>
+        <ui:RetryScope DisplayName="Retry Scope for Loading List of Credit Limit Utilization" sap:VirtualizedContainerService.HintSize="1054,3436" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[in_RetryinProcess]">
+          <ui:RetryScope.ActivityBody>
+            <ActivityAction>
+              <Sequence DisplayName="Action-Load List of Cedit Limit Utilization" sap:VirtualizedContainerService.HintSize="1012,3170" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Activate SAP GUI" sap:VirtualizedContainerService.HintSize="950,540" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="66ac2f71-b1ea-4fab-b186-100b4f43aeec" Version="V2">
+                  <uix:NApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,240" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Activate DelayBefore="{x:Null}" DelayMS="{x:Null}" DisplayName="Activate SAP GUI" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="Activate_1">
+                          <ui:Activate.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad1f3605-01fa-413a-b014-0bbaf0176d6f" InformativeScreenshot="b07cefa05d426dcef78f15d403a90ef7" Selector="&lt;sap text='*' type='GuiTitlebar' /&gt;">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                              <ui:Target.WaitForReady>
+                                <InArgument x:TypeArguments="ui:WaitForReady" />
+                              </ui:Target.WaitForReady>
+                            </ui:Target>
+                          </ui:Activate.Target>
+                        </ui:Activate>
+                      </Sequence>
+                    </ActivityAction>
+                  </uix:NApplicationCard.Body>
+                  <uix:NApplicationCard.TargetApp>
+                    <uix:TargetApp Area="0, 0, 0, 0" ContentHash="2pOp0rKZvkunLOazqNQ4ZA" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SapGui\saplogon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE1SURBVFhHY/j//z/jQOJRB4w6YNQBA+8Ap5rV7E7Vqw8OCK5ZU8jgVL2GE8j4PwB4rXPtGsGBcgDIcmFIFNDfAXDLwQ44dOqipWP16v+O1auohFcDLQFhwpaDHfD20/fP9198/E8NvPf8vf9+DTBHELYc7ID3X37+pwY+e/Pxf7+K2f/tShdhcwBWy6nmgAu3n/73Lp3x37Z4AbYoWA+0XBCb5SBMsQPOAy33LJ72365kITafr3epW4vTchCmyAEgn3uWTIdavgrZ4r/EWA7CDA+evy1tW7Lvf8uiXSTi3f99yoFxToHlIMxglTuD075i2X/78qUkY4fK5ejBDrbcuQ53nKNjahZEUJ8TbzkIU8sBJPschqnlAKLjHB1TXh3XrJlJruUgPNoiGnXAqANGugP+MwIA+QFnw3tJZtEAAAAASUVORK5CYII=" InformativeScreenshot="21d32778dfe91c24327c53ba91b1c57a.png" Reference="BqPKNjmy6U-lEpgbHo9g-A/RulHhK2D8kialEsTj43I6A" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='*' /&gt;" />
+                  </uix:NApplicationCard.TargetApp>
+                </uix:NApplicationCard>
+                <ucas:CallTransaction DisplayName="Call Transaction for Credit limit list" sap:VirtualizedContainerService.HintSize="950,169" sap2010:WorkflowViewState.IdRef="CallTransaction_1" Transaction="[in_TCodeCreditLimitList]">
+                  <ucas:CallTransaction.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="43606f7d-4508-406e-9aa4-97280ab2b9bb" InformativeScreenshot="fd8c670a45576971694dcffa2d73df5a" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='*' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ucas:CallTransaction.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ucas:CallTransaction>
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="SAP Credit Management : Credit Exposure List" sap:VirtualizedContainerService.HintSize="950,2259" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="ba572be7-241c-4b80-8634-a7f5dbca0476" Version="V2">
+                  <uix:NApplicationCard.Body>
+                    <ActivityAction x:TypeArguments="x:Object">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="916,1959" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NCheckState DisplayName="Check App State 'Title-SAP Credit Management :Credit Exposure List'" sap:VirtualizedContainerService.HintSize="854,1191" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="ba572be7-241c-4b80-8634-a7f5dbca0476" Version="V3">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,965" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;SAP Credit Management :Credit Exposure List Page Opened&quot;]" />
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Input-Business Partner'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="ba572be7-241c-4b80-8634-a7f5dbca0476" Text="[in_BusinessPartner]" Version="V3">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="HvnEpJ_ZA0OxyF1GSGWKmw" DesignTimeRectangle="360, 188, 133, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Input-Business Partner'" FullSelectorArgument="&lt;sap id='usr/ctxtO_BUPA-LOW' tooltip='Business Partner Number' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxtO_BUPA-LOW' tooltip='Business Partner Number' /&gt;" Guid="bfa9149b-41bc-4bf1-8e81-b179d772aaa7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIkAAAAdCAYAAACe00+cAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB9SURBVGhD7dIxCoRAAARB//+pfZKJiZGXiQbakRwLVTAvmF7WbT/M3iYSy52RjDFssl2P/HK3SJiHSEgiIYmEJBKSSEgiIYmEJBKSSEgiIYmEJBKSSEgiIYmEJBKSSEgiIYmEJBKSSEgiIf0tEptr1yO/3BmJ2dNEYrH9+AFQInKRJf+b1gAAAABJRU5ErkJggg==" InformativeScreenshot="0e058341494ebb74ebeb7eeea7f1797e.png" Reference="BqPKNjmy6U-lEpgbHo9g-A/4lqtCKoVFECPdihKk7_iKw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' title='SAP Credit Management: Credit Exposure List' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Input-Credit Segment'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="ba572be7-241c-4b80-8634-a7f5dbca0476" Text="[in_CreditSegment]" Version="V3">
+                                <uix:NTypeInto.Target>
+                                  <uix:TargetAnchorable ContentHash="x1zCRGiAjEqoBpgup2BSIQ" DesignTimeRectangle="360, 220, 109, 25" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Input-Credit Segment'" FullSelectorArgument="&lt;sap id='usr/ctxtO_CRSGM-LOW' tooltip='Credit Segment' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxtO_CRSGM-LOW' tooltip='Credit Segment' /&gt;" Guid="755cef55-a559-4bfc-97ac-fda43c953343" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHEAAAAdCAYAAACdSIPxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABuSURBVGhD7dGhDYBQFMBA9l/qj4TBoMBhgAFec006wW37cV6ePcTAD+Jay8P+RNScIAaCGAhiIIiBIAaCGAhiIIiBIAaCGAhiIIiBIAaCGAhiIIiBIAaCGAhiIIiBIAaCGOgX0bN+IXruEMd/XjeWCfaEmPtqsAAAAABJRU5ErkJggg==" InformativeScreenshot="80a64e68a64608b0bc4f8acd9f44c819.png" Reference="BqPKNjmy6U-lEpgbHo9g-A/aQikl-UV_kShUMCj2W9-5Q" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' title='SAP Credit Management: Credit Exposure List' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                                </uix:NTypeInto.Target>
+                              </uix:NTypeInto>
+                              <uix:NClick ClickType="Single" DisplayName="Click 'Button-Execute'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ba572be7-241c-4b80-8634-a7f5dbca0476" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable ContentHash="iglKe7ut3EGbiIgUm04D8A" DesignTimeRectangle="212, 99, 26, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Button-Execute'" FullSelectorArgument="&lt;sap id='tbar[1]/btn[8]' tooltip='Execute   (F8)' /&gt;" FuzzySelectorArgument="&lt;sap id='tbar[1]/btn[8]' tooltip='Execute   (F8)' /&gt;" Guid="c456118d-b79f-4b7e-9d29-8d522c461583" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD/SURBVEhL7ZUxDoMwDAD7KB7DyjOQ2PsCJAbeABsPYOADiJGZsUsXJpcQIkHr2A6gdMlwEsIoFye2ebzeM/yDIPZGEHvDUTxBkT0hSo7E1YR8SyMWN7mWpJ1bzIZAvGWZD0hszwCpQ/asuK9KgdSg5CUUIxY7QovHFuKkhubrvdqMNbOuhihrocdiO0ixTUCK16vhsybFtgVosWKC/oo4RY5ZwYt5Tov3fWy4rZ0kd3WWU8XF0VQXq9rWThTmGrgN0+KFdSHpAFE9LJAqWLEZmfhiekxG66lsz8JNCsQa/SPAis3IFwQTyyAWazbJj0C9d6sFR/F9BLE3gtgTM3wAeVE0RgR9bUAAAAAASUVORK5CYII=" InformativeScreenshot="cb44644d83b6b8286c00e7ec06e92122.png" Reference="BqPKNjmy6U-lEpgbHo9g-A/xm2bH-3XuE69FwJrDAeHNQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' title='SAP Credit Management: Credit Exposure List' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable ContentHash="kpde3SLeokuHbuSIpD38eg" DesignTimeRectangle="16, 40, 1350, 48" DesignTimeScaleFactor="1" ElementType="Toolbar" FriendlyName="'Title-SAP Credit Management :Credit Exposure List'" FullSelectorArgument="&lt;sap id='titl' text='SAP Credit Management: Credit Exposure List' /&gt;" FuzzySelectorArgument="&lt;sap id='titl' text='SAP Credit Management: Credit Exposure List' check:text='SAP Credit Management: Credit Exposure List' /&gt;" Guid="b8028c85-3fc5-49b0-8b87-87503b9abd05" ImageBase64="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" InformativeScreenshot="8a98864f2adc96f3bfb60b767e694b07.png" Reference="BqPKNjmy6U-lEpgbHo9g-A/tvBCttwi9ky3BtvM0DOdyg" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' title='SAP Credit Management: Credit Exposure List' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                          </uix:NCheckState.Target>
+                        </uix:NCheckState>
+                        <uix:NCheckState DisplayName="Check App State 'Title-SAP Display Credit Limit Utilization List'" sap:VirtualizedContainerService.HintSize="854,604" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="ba572be7-241c-4b80-8634-a7f5dbca0476" Version="V3">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,378" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;List of Credit Limit Utilization page Loaded&quot;]" />
+                              <Assign sap2010:Annotation.AnnotationText="Assign true if List of Credit Limit Utilization is loaded" DisplayName="Assign True" sap:VirtualizedContainerService.HintSize="338,113" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Boolean">[booCreditLimitPageExists]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                </Assign.Value>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Assign>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,237" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap2010:Annotation.AnnotationText="Assign false if List of Credit Limit Utilization is loaded" DisplayName="Assign False" sap:VirtualizedContainerService.HintSize="338,113" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Boolean">[booCreditLimitPageExists]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                </Assign.Value>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Assign>
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable ContentHash="eMy4x2j8Q0KqKC2UASCsTA" DesignTimeRectangle="16, 40, 1350, 48" DesignTimeScaleFactor="1" ElementType="Toolbar" FriendlyName="'Title-SAP Display Credit Limit Utilization List'" FullSelectorArgument="&lt;sap id='titl' text='SAP Credit Management: Display List of Credit Limit Utilization' /&gt;" FuzzySelectorArgument="&lt;sap id='titl' text='SAP Credit Management: Display List of Credit Limit Utilization' check:text='SAP Credit Management: Display List of Credit Limit Utilization' /&gt;" Guid="5757d81e-d308-4528-a921-3b7cb62f6dae" ImageBase64="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" InformativeScreenshot="8f6848b2ecdb670383ff30e96e5e9953.png" Reference="BqPKNjmy6U-lEpgbHo9g-A/gevi-NEp1U6OdEOBUmcTqw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' title='SAP Credit Management: Display List of Credit Limit Utilization' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                          </uix:NCheckState.Target>
+                        </uix:NCheckState>
+                      </Sequence>
+                    </ActivityAction>
+                  </uix:NApplicationCard.Body>
+                  <uix:NApplicationCard.TargetApp>
+                    <uix:TargetApp Area="0, 0, 0, 0" ContentHash="0-zQlmk_hk6O8NwvD13VKQ" FilePath="C:\Program Files (x86)\SAP\FrontEnd\SapGui\saplogon.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE1SURBVFhHY/j//z/jQOJRB4w6YNQBA+8Ap5rV7E7Vqw8OCK5ZU8jgVL2GE8j4PwB4rXPtGsGBcgDIcmFIFNDfAXDLwQ44dOqipWP16v+O1auohFcDLQFhwpaDHfD20/fP9198/E8NvPf8vf9+DTBHELYc7ID3X37+pwY+e/Pxf7+K2f/tShdhcwBWy6nmgAu3n/73Lp3x37Z4AbYoWA+0XBCb5SBMsQPOAy33LJ72365kITafr3epW4vTchCmyAEgn3uWTIdavgrZ4r/EWA7CDA+evy1tW7Lvf8uiXSTi3f99yoFxToHlIMxglTuD075i2X/78qUkY4fK5ejBDrbcuQ53nKNjahZEUJ8TbzkIU8sBJPschqnlAKLjHB1TXh3XrJlJruUgPNoiGnXAqANGugP+MwIA+QFnw3tJZtEAAAAASUVORK5CYII=" InformativeScreenshot="2bfd145c6717d42b6174d9fea4cbf594.png" Reference="BqPKNjmy6U-lEpgbHo9g-A/BJm95o_M-k2Hz3EumTgXOg" Selector="&lt;wnd app='saplogon.exe' title='SAP Credit Management: Credit Exposure List' /&gt;" />
+                  </uix:NApplicationCard.TargetApp>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NApplicationCard>
+              </Sequence>
+            </ActivityAction>
+          </ui:RetryScope.ActivityBody>
+          <ui:RetryScope.Condition>
+            <ActivityFunc x:TypeArguments="x:Boolean">
+              <ui:CheckTrue DisplayName="Check True" ErrorMessage="Failed to Load List of Credit Limit Utilization Page" Expression="[booCreditLimitPageExists]" sap:VirtualizedContainerService.HintSize="334,97" sap2010:WorkflowViewState.IdRef="CheckTrue_1" />
+            </ActivityFunc>
+          </ui:RetryScope.Condition>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:RetryScope>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1058,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Sequence-Load List of credit limit utilization" sap:VirtualizedContainerService.HintSize="400,360" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,101" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;Failed to Load List of Credit Limit Utilization. Error: &quot; + exception.Message]" />
+              <Throw Exception="[New SystemException(&quot;Failed to Load List of Credit Limit Utilization in SAP_GUI_LoadListofCreditLimitUtilization workflow. Error: &quot; + exception.Message)]" sap:VirtualizedContainerService.HintSize="338,97" sap2010:WorkflowViewState.IdRef="Throw_1" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+  </Sequence>
+</Activity>

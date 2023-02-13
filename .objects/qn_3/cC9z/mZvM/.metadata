@@ -1,0 +1,12 @@
+﻿{
+  "Id": "mZvM5NaWXUWYsyxBtUz-ZQ",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/mZvM5NaWXUWYsyxBtUz-ZQ",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/cC9zGV3Hu0qBlni__Ro6Yg",
+  "Name": "SAP Login Screeen",
+  "Type": "Screen",
+  "Created": "2022-12-26T08:50:25.0778887Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-12-26T08:50:25.0778887Z"
+}

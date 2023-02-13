@@ -1,0 +1,14 @@
+﻿{
+  "Id": "AesR-X7QYkKaaVcqH8oXOQ",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/AesR-X7QYkKaaVcqH8oXOQ",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/x72HahtX2EqrpA7sGX1HdA",
+  "Name": "Button-Upload",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Created": "2023-01-04T09:07:06.3912093Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-04T09:07:06.3912093Z"
+}

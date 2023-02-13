@@ -1,0 +1,15 @@
+﻿{
+  "Id": "-fViFuHDpUSAFUP3Em_Rkg",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/-fViFuHDpUSAFUP3Em_Rkg",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/cC9zGV3Hu0qBlni__Ro6Yg",
+  "Name": "SAP Display Credit Limit Utilization List",
+  "Type": "Screen",
+  "Created": "2022-12-26T10:04:08.6586512Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-12-26T10:05:14.75054Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

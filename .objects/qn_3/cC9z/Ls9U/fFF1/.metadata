@@ -1,0 +1,13 @@
+﻿{
+  "Id": "fFF1zCOQgEe7GFJKYRkbQw",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/fFF1zCOQgEe7GFJKYRkbQw",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/Ls9UF7lQ6ECfEv2kfbZ-RA",
+  "Name": "Click 'Export'",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2023-01-03T06:32:44.1665889Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-03T06:32:44.1665889Z"
+}

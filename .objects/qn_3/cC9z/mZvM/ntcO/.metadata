@@ -1,0 +1,14 @@
+﻿{
+  "Id": "ntcOZKMPHUeN3gQq02zYmw",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/ntcOZKMPHUeN3gQq02zYmw",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/mZvM5NaWXUWYsyxBtUz-ZQ",
+  "Name": "Call transaction Page",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2022-12-26T09:02:12.7667815Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-12-26T09:02:12.7667815Z"
+}

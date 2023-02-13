@@ -1,0 +1,16 @@
+﻿{
+  "Id": "wAPk2cH76EaQv10-6FjBHw",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/wAPk2cH76EaQv10-6FjBHw",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/VHRUng9hY0iDNCB5F39NUA",
+  "Name": "Button-Open",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2023-01-04T09:13:07.3768208Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-04T09:14:33.3614645Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

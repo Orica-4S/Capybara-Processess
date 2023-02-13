@@ -1,0 +1,14 @@
+﻿{
+  "Id": "jyuRwfcuOUWHq7j6a-BCug",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/jyuRwfcuOUWHq7j6a-BCug",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/Ls9UF7lQ6ECfEv2kfbZ-RA",
+  "Name": "Title-Commitment",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2022-12-26T11:22:15.2680333Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-12-26T11:22:15.2680333Z"
+}

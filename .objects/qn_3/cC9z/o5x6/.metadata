@@ -1,0 +1,15 @@
+﻿{
+  "Id": "o5x6wXCLxUGckDq6l35KMA",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/o5x6wXCLxUGckDq6l35KMA",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/cC9zGV3Hu0qBlni__Ro6Yg",
+  "Name": "SAP Credit Exposure",
+  "Type": "Screen",
+  "Created": "2022-12-26T10:45:03.2144051Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-12-26T10:45:55.4575142Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

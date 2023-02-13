@@ -1,0 +1,15 @@
+﻿{
+  "Id": "CN8vzASzAEeMblbely7Dxg",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/CN8vzASzAEeMblbely7Dxg",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/cC9zGV3Hu0qBlni__Ro6Yg",
+  "Name": "Export",
+  "Type": "Screen",
+  "Created": "2023-01-03T09:54:58.4621766Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-03T09:55:29.8226175Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

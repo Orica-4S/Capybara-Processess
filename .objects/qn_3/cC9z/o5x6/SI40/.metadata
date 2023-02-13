@@ -1,0 +1,14 @@
+﻿{
+  "Id": "SI409LITxkW7ulX6kpTepg",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/SI409LITxkW7ulX6kpTepg",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/o5x6wXCLxUGckDq6l35KMA",
+  "Name": "Button-More",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Created": "2022-12-26T10:59:01.2118083Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-12-26T10:59:01.2118083Z"
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Id": "BJm95o_M-k2Hz3EumTgXOg",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/BJm95o_M-k2Hz3EumTgXOg",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/cC9zGV3Hu0qBlni__Ro6Yg",
+  "Name": "SAP Credit Management : Credit Exposure List",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Created": "2022-12-26T09:41:04.0567309Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-12-26T09:41:04.0567309Z"
+}

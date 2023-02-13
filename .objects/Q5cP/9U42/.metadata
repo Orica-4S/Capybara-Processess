@@ -1,0 +1,12 @@
+﻿{
+  "Id": "9U42PEb_HEGNezUdOmTIgg",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/9U42PEb_HEGNezUdOmTIgg",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/Q5cPISsakUuPDrAkKnl29A",
+  "Name": "1.0.0",
+  "Type": "AppVersion",
+  "Created": "2023-01-04T07:06:28.6517796Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-04T07:06:28.6517796Z"
+}

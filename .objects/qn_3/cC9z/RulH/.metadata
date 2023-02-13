@@ -1,0 +1,14 @@
+﻿{
+  "Id": "RulHhK2D8kialEsTj43I6A",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/RulHhK2D8kialEsTj43I6A",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/cC9zGV3Hu0qBlni__Ro6Yg",
+  "Name": "SAP Easy Access",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Created": "2023-02-05T07:47:36.287875Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-02-05T07:47:36.287875Z"
+}

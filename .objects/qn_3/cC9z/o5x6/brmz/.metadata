@@ -1,0 +1,14 @@
+﻿{
+  "Id": "brmzYKDLLEu_tBzqZDSZOw",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/brmzYKDLLEu_tBzqZDSZOw",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/o5x6wXCLxUGckDq6l35KMA",
+  "Name": "Click-Name of Credit Exposure Category",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2022-12-26T10:50:44.8050292Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-12-26T10:50:44.8050292Z"
+}

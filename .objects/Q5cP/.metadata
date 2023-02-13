@@ -1,0 +1,11 @@
+﻿{
+  "Id": "Q5cPISsakUuPDrAkKnl29A",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/Q5cPISsakUuPDrAkKnl29A",
+  "Name": "SharePoint",
+  "Type": "App",
+  "Created": "2023-01-04T07:06:25.7843352Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-04T07:06:25.7843352Z"
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Id": "V94xXBHC8US398LBTXzFkw",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/V94xXBHC8US398LBTXzFkw",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/Ls9UF7lQ6ECfEv2kfbZ-RA",
+  "Name": "Click 'List'",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2023-01-03T05:34:06.2111096Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-01-03T05:34:06.2111096Z"
+}

@@ -1,0 +1,14 @@
+﻿{
+  "Id": "4lqtCKoVFECPdihKk7_iKw",
+  "Reference": "BqPKNjmy6U-lEpgbHo9g-A/4lqtCKoVFECPdihKk7_iKw",
+  "ParentRef": "BqPKNjmy6U-lEpgbHo9g-A/BJm95o_M-k2Hz3EumTgXOg",
+  "Name": "Input-Business Partner",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Created": "2022-12-26T09:53:23.9848406Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=22.10.3.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=22.10.2.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-12-26T09:53:23.9848406Z"
+}
