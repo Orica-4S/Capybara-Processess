@@ -5,6 +5,7 @@
   "dependencies": {
     "KillApps": "[1.0.3]",
     "SAP_Login": "[1.0.17]",
+    "SharePoint.Login": "[1.0.3]",
     "UiPath.Excel.Activities": "[2.16.0]",
     "UiPath.System.Activities": "[22.10.3]",
     "UiPath.Testing.Activities": "[22.10.0]",
